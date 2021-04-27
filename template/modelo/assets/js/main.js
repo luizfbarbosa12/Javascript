@@ -4,11 +4,12 @@ const escopoTotal = () => {
     let form = document.querySelector('.form')
     let imc = document.querySelector('.resultado')
     let mensagem;
+    
     const recebeEventoForm = (event) => {
         event.preventDefault()
-        console.log(`Sua altura é: ${height} e seu peso é ${weight}`)
         imc = weight/ (height * height)
-
+        
+        
         if(imc < 18.5) {
             mensagem = "(Abaixo do peso)"
         } else if(imc > 18.5 && imc < 24.9) {
@@ -24,10 +25,17 @@ const escopoTotal = () => {
         } else {
             alert("Favor inserir um valor válido nos campos")
         }
-        console.log(imc.toFixed(2), height, weight)
-        imc.innerHTML = `Seu IMC é ${imc} ${mensagem}`
+
+        const resultado = document.querySelector("#resultado");
+
+        const paragraph = document.createElement('p');
+        paragraph.classList.add('resultado');
+        paragraph.innerHTML = `Seu IMC é ${imc.toFixed(2)} ${mensagem}`;
+        resultado.appendChild(paragraph)
+         
     }
     form.addEventListener('submit', recebeEventoForm)
+    
 }
 
 
