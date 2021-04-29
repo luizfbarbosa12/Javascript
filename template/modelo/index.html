@@ -22,16 +22,17 @@
     <div class="tabela"><p>Mais do que 40</p><p>Obesidade grau 3</p></div>
   
 
-  <h2>Calcule seu peso</h2>
-  <form class="form" action="">
-  <label>Peso:</label>
-  <input  id="weight" type="text">
-  <label>Altura:</label>
-  <input  id="height" type="text">
-  <button onclick="escopoTotal()" type="submit">Calcular</button>
-  </form> 
-  <div id="resultado"></div>
-</section>
+  <h2>Calcule seu IMC</h2>
+    <form action="/" id="formulario" method="POST">
+      <label for="peso">Peso</label>
+      <input type="text" id="peso" name="peso">
+      <label for="altura">Altura</label>
+      <input type="text" id="altura" name="altura">
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div id="resultado"></div>
+  </section>
   <script src="./assets/js/main.js"></script>
 </body>
 
