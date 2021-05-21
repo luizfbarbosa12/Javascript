@@ -1,4 +1,4 @@
-//new Date(0); = data inicial/timestamp zero.
+// new Date(0); = data inicial/timestamp zero.
 
 const getTimeSeconds = (seconds) => {
   const data = new Date(seconds * 1000);
@@ -39,4 +39,6 @@ document.addEventListener("click", function (event) {
     timer.classList.add("paused");
   }
 });
+
+
 
