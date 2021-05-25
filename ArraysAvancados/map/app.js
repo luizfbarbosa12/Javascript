@@ -17,14 +17,28 @@ const pessoas = [
   { name: "Wallace", age: 47 },
 ];
 
+// const idades = pessoas.map((item) => {
+//   return item.age;
+// });
+// const idades = pessoas.map((pessoa) => {
+//   return { idade: pessoa.age };
+// });
+// const addId = pessoas.map((pessoa, index) => {
+//   return { ...pessoa, id: index };
+// });
+
+// console.log(addId);
+//criando um novo objeto, eu não altero o array original
+const addId = pessoas.map((pessoa, index) => {
+  const newPessoa = { ...pessoa };
+  newPessoa.id = index;
+  return newPessoa;
+});
+
+console.log(addId);
+
 // const objetoMapeado = pessoas.map((pessoa) => {
 //   return pessoa.name;
 // });
 
 // console.log(objetoMapeado);
-
-const idades = pessoas.map((pessoa) => {
-  return { idade: pessoa.idade };
-});
-
-console.log(idades);
