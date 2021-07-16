@@ -49,8 +49,6 @@ const promises = ['primeiro valor', waitUp('promise1', 3000), waitUp('promise2',
     } catch(error) {
         console.log(error)
     }
-   
-
  }
 
  executa()
