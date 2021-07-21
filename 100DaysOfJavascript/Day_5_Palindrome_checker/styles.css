@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --grey: #eee;
+  --dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.container {
+  min-width: 100vw;
+  background-color: #222831;
+  color: #eeeeee;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.check {
+  background-color: #222831;
+  border: 1px solid white;
+  color: #eeeeee;
+  font-weight: 700;
+  height: 32px;
+  width: 100px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+}
+
+.check:hover {
+  background-color: white;
+  color: #333;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+input {
+  margin-top: 54px;
+  height: 32px;
+  width: 200px;
+  background: #222831;
+  border: 1px solid #eeeeee;
+  font-size: 16px;
+  color: #eeeeee;
+  border-radius: 4px;
+}
+
+input:focus {
+  border: none;
+}
+
+.result {
+  font-size: 26px;
+  margin-top: 20px;
+  font-weight: 700;
+}
